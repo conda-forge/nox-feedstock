@@ -1,4 +1,4 @@
-{% set version = "2019.5.30" %}
+{% set version = "2019.8.20" %}
 
 package:
   name: nox
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/nox/nox-{{ version }}.tar.gz
-  sha256: ea464eeab05cd81317ac09e30dcce07388e41458777b167b35b26ce60b60bd8e
+  sha256: ea0bbdf5062af7ed54d2a3968319df5f78e4eca2afa091c6022732856560e919
 
 build:
   number: 0
