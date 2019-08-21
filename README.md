@@ -121,4 +121,5 @@ Feedstock Maintainers
 
 * [@MarckK](https://github.com/MarckK/)
 * [@kynan](https://github.com/kynan/)
+* [@tswast](https://github.com/tswast/)
 
