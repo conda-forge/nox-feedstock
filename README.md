@@ -18,9 +18,7 @@ Current build status
 ====================
 
 
-<table><tr>
-    
-    <td>All platforms:</td>
+<table><tr><td>All platforms:</td>
     <td>
       <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5053&branchName=master">
         <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nox-feedstock?branchName=master">
@@ -123,4 +121,5 @@ Feedstock Maintainers
 
 * [@MarckK](https://github.com/MarckK/)
 * [@kynan](https://github.com/kynan/)
+* [@tswast](https://github.com/tswast/)
 
