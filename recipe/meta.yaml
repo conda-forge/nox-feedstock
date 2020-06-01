@@ -36,7 +36,7 @@ test:
 
 about:
   home: https://nox.thea.codes
-  license: Apache-2
+  license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
   summary: Flexible test automation for Python
