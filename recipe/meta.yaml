@@ -1,4 +1,4 @@
-{% set version = "2019.11.9" %}
+{% set version = "2020.5.24" %}
 
 package:
   name: nox
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/nox/nox-{{ version }}.tar.gz
-  sha256: 22d0f45ad2bd2d75fa4a243d8d8b84359dbf43134ec5cbff4de9f243b6d528b8
+  sha256: 61a55705736a1a73efbd18d5b262a43d55a1176546e0eb28b29064cfcffe26c0
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
   noarch: python
   entry_points:
     - nox = nox.__main__:main
@@ -36,10 +36,10 @@ test:
 
 about:
   home: https://nox.thea.codes
-  license: Apache-2
+  license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Flexible test automation for Python'
+  summary: Flexible test automation for Python
 
   description: |
     nox is a command-line tool that automates testing in multiple Python
