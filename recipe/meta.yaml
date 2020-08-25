@@ -17,10 +17,10 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python
     - pip
   run:
-    - python >=3.5
+    - python
     - argcomplete >=1.9.4,<2.0
     - colorlog >=2.6.1,<4.0.0
     - py >=1.4.0,<2.0.0
