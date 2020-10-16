@@ -22,12 +22,11 @@ requirements:
   run:
     - python
     - argcomplete >=1.9.4,<2.0
-    - colorlog >=2.6.1,<4.0.0
+    - colorlog >=2.6.1,<5.0.0
     - py >=1.4.0,<2.0.0
     - virtualenv >=14.0.0
     - importlib_metadata  # [py<38]
     - jinja2
-    - tox
 
 test:
   requires:
@@ -35,7 +34,6 @@ test:
     - pip
   imports:
     - nox
-    - nox.tox_to_nox
   commands:
     - python -m pip check
 
