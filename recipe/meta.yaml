@@ -1,4 +1,4 @@
-{% set version = "2020.8.22" %}
+{% set version = "2020.12.31" %}
 
 package:
   name: nox
@@ -6,10 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/nox/nox-{{ version }}.tar.gz
-  sha256: efa5adcf1134012f96bcd0a496ccebd4c9e9da53a831888a2a779462440eebcf
+  sha256: 58a662070767ed4786beb46ce3a789fca6f1e689ed3ac15c73c4d0094e4f9dc4
 
 build:
-  number: 2
+  number: 0
+  noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
   entry_points:
     - nox = nox.__main__:main
@@ -17,20 +18,20 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - argcomplete >=1.9.4,<2.0
     - colorlog >=2.6.1,<5.0.0
     - py >=1.4.0,<2.0.0
     - virtualenv >=14.0.0
-    - importlib_metadata  # [py<38]
+    - importlib_metadata
     - jinja2
 
 test:
   requires:
-    - python
+    - python >=3.6
     - pip
   imports:
     - nox
