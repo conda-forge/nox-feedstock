@@ -18,10 +18,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - argcomplete >=1.9.4,<2.0
     - colorlog >=2.6.1,<5.0.0
     - py >=1.4.0,<2.0.0
@@ -31,7 +31,7 @@ requirements:
 
 test:
   requires:
-    - python
+    - python >=3.6
     - pip
   imports:
     - nox
