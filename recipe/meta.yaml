@@ -10,7 +10,6 @@ source:
 
 build:
   number: 1
-  noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
   entry_points:
     - nox = nox.__main__:main
@@ -26,9 +25,9 @@ requirements:
     - colorlog >=2.6.1,<7.0.0
     - packaging >=20.9
     - py >=1.4.0,<2.0.0
-    - typing_extensions >=3.7.4 # [py<=38]
+    - typing_extensions >=3.7.4  # [py<=38]
     - virtualenv >=14.0.0
-    - importlib_metadata # [py<=38]
+    - importlib_metadata  # [py<=38]
     - jinja2
 
 test:
