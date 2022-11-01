@@ -52,7 +52,7 @@ about:
     environments, similar to Tox. Unlike Tox, Nox uses a standard Python
     file for configuration.
   doc_url: https://nox.thea.codes
-  dev_url: https://github.com/theacodes/nox
+  dev_url: https://github.com/wntrblm/nox
 
 extra:
   recipe-maintainers:
