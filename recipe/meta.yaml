@@ -9,7 +9,7 @@ source:
   sha256: e21c31de0711d1274ca585a2c5fde36b1aa962005ba8e9322bf5eeed16dcd684
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
   entry_points:
     - nox = nox.__main__:main
