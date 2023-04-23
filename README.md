@@ -1,11 +1,11 @@
-About nox
-=========
+About nox-feedstock
+===================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nox-feedstock/blob/main/LICENSE.txt)
 
 Home: https://nox.thea.codes
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nox-feedstock/blob/main/LICENSE.txt)
 
 Summary: Flexible test automation for Python
 
