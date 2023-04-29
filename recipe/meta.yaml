@@ -19,15 +19,17 @@ requirements:
   host:
     - python
     - pip
+    - hatchling
   run:
     - python
-    - argcomplete >=1.9.4,<2.0
+    - argcomplete >=1.9.4,<4.0
     - colorlog >=2.6.1,<7.0.0
     - packaging >=20.9
     - typing_extensions >=3.7.4  # [py<=38]
     - virtualenv >=14.0.0
     - importlib_metadata  # [py<=38]
     - jinja2
+    - tox <4
 
 test:
   requires:
