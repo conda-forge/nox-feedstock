@@ -10,7 +10,7 @@ source:
 
 build:
   noarch: python
-  number: 3
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
   entry_points:
     - nox = nox.__main__:main
