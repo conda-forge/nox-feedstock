@@ -10,7 +10,7 @@ source:
 
 build:
   noarch: python
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
   entry_points:
     - nox = nox.__main__:main
@@ -18,17 +18,15 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - hatchling
   run:
-    - python >=3.7
+    - python >=3.8
     - argcomplete >=1.9.4,<4.0
     - colorlog >=2.6.1,<7.0.0
     - packaging >=20.9
-    - typing_extensions >=3.7.4  # [py<=38]
-    - virtualenv >=14.0.0
-    - importlib_metadata  # [py<=38]
+    - virtualenv >=20.14.1
     - jinja2
     - tox <4
 
