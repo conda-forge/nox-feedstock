@@ -153,6 +153,7 @@ Feedstock Maintainers
 =====================
 
 * [@MarckK](https://github.com/MarckK/)
+* [@henryiii](https://github.com/henryiii/)
 * [@kynan](https://github.com/kynan/)
 * [@tswast](https://github.com/tswast/)
 
