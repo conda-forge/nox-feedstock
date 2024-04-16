@@ -26,9 +26,10 @@ requirements:
     - argcomplete >=1.9.4,<4.0
     - colorlog >=2.6.1,<7.0.0
     - packaging >=20.9
+    - tomli >=1
     - virtualenv >=20.14.1
     - jinja2
-    - tox <4
+    - tox
 
 test:
   requires:
