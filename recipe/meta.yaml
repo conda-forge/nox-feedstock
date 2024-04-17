@@ -1,4 +1,4 @@
-{% set version = "2024.3.2" %}
+{% set version = "2024.4.15" %}
 
 package:
   name: nox
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/nox/nox-{{ version }}.tar.gz
-  sha256: f521ae08a15adbf5e11f16cb34e8d0e6ea521e0b92868f684e91677deb974553
+  sha256: ecf6700199cdfa9e5ea0a41ff5e6ef4641d09508eda6edb89d9987864115817f
 
 build:
   noarch: python
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
   entry_points:
     - nox = nox.__main__:main
@@ -26,9 +26,10 @@ requirements:
     - argcomplete >=1.9.4,<4.0
     - colorlog >=2.6.1,<7.0.0
     - packaging >=20.9
+    - tomli >=1
     - virtualenv >=20.14.1
     - jinja2
-    - tox <4
+    - tox
 
 test:
   requires:
