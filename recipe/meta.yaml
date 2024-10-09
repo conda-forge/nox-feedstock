@@ -1,4 +1,4 @@
-{% set version = "2024.4.15" %}
+{% set version = "2024.10.9" %}
 
 package:
   name: nox
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/nox/nox-{{ version }}.tar.gz
-  sha256: ecf6700199cdfa9e5ea0a41ff5e6ef4641d09508eda6edb89d9987864115817f
+  sha256: 7aa9dc8d1c27e9f45ab046ffd1c3b2c4f7c91755304769df231308849ebded95
 
 build:
   noarch: python
