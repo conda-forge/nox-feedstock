@@ -5,12 +5,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/n/nox/nox-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/n/nox/nox-{{ version }}.tar.gz
   sha256: 7aa9dc8d1c27e9f45ab046ffd1c3b2c4f7c91755304769df231308849ebded95
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
   entry_points:
     - nox = nox.__main__:main
@@ -18,11 +18,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - hatchling
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - argcomplete >=1.9.4,<4.0
     - colorlog >=2.6.1,<7.0.0
     - packaging >=20.9
@@ -33,7 +33,7 @@ requirements:
 
 test:
   requires:
-    - python
+    - python {{ python_min }}
     - pip
   imports:
     - nox
