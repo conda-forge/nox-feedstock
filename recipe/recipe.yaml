@@ -1,28 +1,32 @@
-{% set version = "2025.2.9" %}
+schema_version: 1
+
+context:
+  version: 2025.2.9
 
 package:
   name: nox
-  version: {{ version }}
+  version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/n/nox/nox-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/n/nox/nox-${{ version }}.tar.gz
   sha256: d50cd4ca568bd7621c2e6cbbc4845b3b7f7697f25d5fb0190ce8f4600be79768
 
 build:
+  number: 1
   noarch: python
-  number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
-  entry_points:
-    - nox = nox.__main__:main
-    - tox-to-nox = nox.tox_to_nox:main
+  script: ${{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
+  python:
+    entry_points:
+      - nox = nox.__main__:main
+      - tox-to-nox = nox.tox_to_nox:main
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python ${{ python_min }}.*
     - pip
     - hatchling
   run:
-    - python >={{ python_min }}
+    - python >=${{ python_min }}
     - argcomplete >=1.9.4,<4.0
     - attrs >=23.1
     - colorlog >=2.6.1,<7.0.0
@@ -34,28 +38,29 @@ requirements:
     - jinja2
     - tox >=4
 
-test:
-  requires:
-    - python {{ python_min }}
-    - pip
-  imports:
-    - nox
-  commands:
-    - python -m pip check
+tests:
+  - python:
+      imports:
+        - nox
+      python_version: ${{ python_min }}.*
+  - requirements:
+      run:
+        - python ${{ python_min }}.*
+        - pip
+    script:
+      - python -m pip check
 
 about:
-  home: https://nox.thea.codes
   license: Apache-2.0
-  license_family: Apache
   license_file: LICENSE
   summary: Flexible test automation for Python
-
   description: |
     nox is a command-line tool that automates testing in multiple Python
     environments, similar to Tox. Unlike Tox, Nox uses a standard Python
     file for configuration.
-  doc_url: https://nox.thea.codes
-  dev_url: https://github.com/wntrblm/nox
+  homepage: https://nox.thea.codes
+  repository: https://github.com/wntrblm/nox
+  documentation: https://nox.thea.codes
 
 extra:
   recipe-maintainers:
