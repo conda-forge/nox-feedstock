@@ -3,7 +3,7 @@ About nox-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nox-feedstock/blob/main/LICENSE.txt)
 
-Home: https://nox.thea.codes
+Home: https://nox.thea.codes/
 
 Package license: Apache-2.0
 
@@ -11,12 +11,11 @@ Summary: Flexible test automation for Python
 
 Development: https://github.com/wntrblm/nox
 
-Documentation: https://nox.thea.codes
+Documentation: https://nox.thea.codes/
 
 nox is a command-line tool that automates testing in multiple Python
 environments, similar to Tox. Unlike Tox, Nox uses a standard Python
 file for configuration.
-
 
 Current build status
 ====================
