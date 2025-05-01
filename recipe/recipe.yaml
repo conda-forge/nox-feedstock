@@ -28,12 +28,12 @@ requirements:
   run:
     - python >=${{ python_min }}
     - argcomplete >=1.9.4,<4.0
-    - attrs >=23.1
+    - attrs >=24.1
     - colorlog >=2.6.1,<7.0.0
     - dependency-groups >=1.1
     - packaging >=20.9
     - tomli >=1
-    - virtualenv >=20.14.1
+    - virtualenv >=20.15
     - importlib_resources
     - jinja2
     - tox >=4
