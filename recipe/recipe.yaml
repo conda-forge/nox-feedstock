@@ -31,6 +31,7 @@ requirements:
     - attrs >=24.1
     - colorlog >=2.6.1,<7.0.0
     - dependency-groups >=1.1
+    - humanize
     - packaging >=20.9
     - pbs-installer
     - tomli >=1
