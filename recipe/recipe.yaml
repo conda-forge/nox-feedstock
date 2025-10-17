@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2025.10.14"
+  version: "2025.10.16"
 
 package:
   name: nox
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/n/nox/nox-${{ version }}.tar.gz
-  sha256: 2f839d2b071a54ede549f59ff7017c3752b636f7a10f6cbe3d7dedfe4c7d3ce8
+  sha256: fca1e7504384dbc91dddef3fec45d04572f23c882a87241e2c793b77fe1c9259
 
 build:
   number: 0
