@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2025.11.12"
+  version: "2026.2.9"
 
 package:
   name: nox
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/n/nox/nox-${{ version }}.tar.gz
-  sha256: 3d317f9e61f49d6bde39cf2f59695bb4e1722960457eee3ae19dacfe03c07259
+  sha256: 1bc8a202ee8cd69be7aaada63b2a7019126899a06fc930a7aee75585bf8ee41b
 
 build:
   number: 0
@@ -32,7 +32,7 @@ requirements:
     - colorlog >=2.6.1,<7.0.0
     - dependency-groups >=1.1
     - humanize
-    - packaging >=20.9
+    - packaging >=22
     - pbs-installer
     - tomli >=1
     - virtualenv >=20.15
