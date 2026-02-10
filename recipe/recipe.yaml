@@ -32,7 +32,7 @@ requirements:
     - colorlog >=2.6.1,<7.0.0
     - dependency-groups >=1.1
     - humanize
-    - packaging >=20.9
+    - packaging >=22
     - pbs-installer
     - tomli >=1
     - virtualenv >=20.15
