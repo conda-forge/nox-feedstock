@@ -1,7 +1,8 @@
 schema_version: 1
 
 context:
-  version: "2026.2.9"
+  version: "2026.4.10"
+  python_min: "3.9"
 
 package:
   name: nox
@@ -9,12 +10,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/n/nox/nox-${{ version }}.tar.gz
-  sha256: 1bc8a202ee8cd69be7aaada63b2a7019126899a06fc930a7aee75585bf8ee41b
+  sha256: 2d0af5374f3f37a295428c927d1b04a8182aa01762897d172446dda2f1ce9692
 
 build:
   number: 0
   noarch: python
-  script: ${{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
+  script: ${{ PYTHON }} -m pip install . -vv
   python:
     entry_points:
       - nox = nox.__main__:main
@@ -31,10 +32,10 @@ requirements:
     - attrs >=24.1
     - colorlog >=2.6.1,<7.0.0
     - dependency-groups >=1.1
-    - humanize
+    - humanize >=4
     - packaging >=22
-    - pbs-installer
-    - tomli >=1
+    - pbs-installer >=2025.1.6
+    - tomli >=1.1
     - virtualenv >=20.15
     - importlib_resources
     - jinja2
@@ -45,12 +46,12 @@ tests:
       imports:
         - nox
       python_version: ${{ python_min }}.*
+      pip_check: true
   - requirements:
       run:
         - python ${{ python_min }}.*
-        - pip
     script:
-      - python -m pip check
+      - nox --help
 
 about:
   license: Apache-2.0
