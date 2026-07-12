@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2026.4.10"
+  version: "2026.7.11"
   python_min: "3.9"
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/n/nox/nox-${{ version }}.tar.gz
-  sha256: 2d0af5374f3f37a295428c927d1b04a8182aa01762897d172446dda2f1ce9692
+  sha256: dec9bd2c854540a2d5c0b841eaaf1d23a7c26cd90af36d9f1f1668b34524bfd9
 
 build:
   number: 0
