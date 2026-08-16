@@ -2,7 +2,6 @@ schema_version: 1
 
 context:
   version: "2026.8.10"
-  python_min: "3.10"
 
 package:
   name: nox
@@ -45,7 +44,9 @@ tests:
   - python:
       imports:
         - nox
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
       pip_check: true
   - requirements:
       run:
