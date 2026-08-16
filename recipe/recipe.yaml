@@ -1,8 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2026.7.11"
-  python_min: "3.10"
+  version: "2026.8.10"
 
 package:
   name: nox
@@ -10,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/n/nox/nox-${{ version }}.tar.gz
-  sha256: dec9bd2c854540a2d5c0b841eaaf1d23a7c26cd90af36d9f1f1668b34524bfd9
+  sha256: 13f45e46552eade9f4b60474133e31e1e0bb341234a3cc0c9d6fff17570ce8bb
 
 build:
   number: 0
@@ -45,7 +44,9 @@ tests:
   - python:
       imports:
         - nox
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
       pip_check: true
   - requirements:
       run:
